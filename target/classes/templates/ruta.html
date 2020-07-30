@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Parametros</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <a th:href="@{/params/string(texto='Hector')}">/params/string?texto=Hector</a>
+        </li>
+        <li>
+            <a th:href="@{/params/mix-params(texto='Hector Roa', numero=21)}">/params/string?texto=Hector2&numero=21</a>
+        </li>
+        <li>
+            <a th:href="@{/params/mix-params-request(texto='Hector Roa', numero=25)}">/params/string?texto=Hector2&numero=21</a>
+        </li>
+    </ul>
+</body>
+</html>
