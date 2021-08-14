@@ -13,7 +13,7 @@ public class EjemploParamsController {
 
     @RequestMapping(value = "/string")
     public String param(@RequestParam(required = false) String texto, Model model) {
-        model.addAttribute("resultado", "El parametro enviado es " + texto);
+        model.addAttribute("resultado", "El parametro enviado es increible " + texto);
         return "ver";
     }
 
